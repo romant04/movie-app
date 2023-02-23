@@ -1,0 +1,66 @@
+.navbar {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-inline: 4.5em;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #32047a;
+  color: white;
+}
+
+.navbar .search_link_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3em;
+}
+
+.navbar .search_link_container .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  gap: 2em;
+}
+
+.navbar .search_link_container .links a {
+  position: relative;
+}
+
+.navbar .search_link_container .links a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  background-color: white;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.navbar .search_link_container .links a:hover::after {
+  width: 100%;
+}
+/*# sourceMappingURL=home.module.css.map */
